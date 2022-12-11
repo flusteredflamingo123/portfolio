@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <title>Portfolio: Responsive Redesign</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+    <body>
+        <h1>Responsive Redesign</h1>
+        <div class = "content">
+            <div class="orange">
+                <div class="center"><h2>Overview</h2></div>
+                <p> Toward the beginning of the course, I learned how to analyze a webpage for its usability, learnability, and memorability.
+                    To test these skills, I identified usability problems with an existing website and 
+                    went through the process of redesigning and developing an improved version with greater responsiveness.</p>
+                <p> The flawed webpage I chose to redesign was this night sky tracker: </p>
+                <div class ="center"><img id="flawed" src="images/webpage.PNG" alt="Screenshot of Sky and Telescope's interactive sky chart webpage."></div>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Process</h2></div>
+                <p>First, I divided the issues I observed with the webpage into the categories of usability, learnability, and memorability.</p>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>Usability</th>
+                            <th>Learnability</th>
+                            <th>Memorability</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>In order to update the date or time, a submit button must be pressed, which is less efficient than automatically 
+                                        updating the page when the date or time is changed.</li>
+                                    <li>
+                                        On mobile, the star chart shrinks such that pieces of text overlap one another, making it difficult to read
+                                        the chart's information.
+                                    </li>
+                                    <li>
+                                        On mobile, you cannot press the change time buttons while also viewing how the sky image moves as a result, so 
+                                        the user is required to scroll back and forth to see the effect of their actions.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>The controls for setting the date and location are the only settings needed to begin using the page, 
+                                        so these options should be separated in the top left. Currently, it is difficult for new users to determine what they need to interact with.</li>
+                                    <li>
+                                        The area of the sky that is displayed can be moved by dragging the window on the sky chart, a feature that is not at
+                                        signaled to the user.
+                                    </li>
+                                    <li>
+                                        There is no clear hierarchy, as headers have barely more weight than other text, and the interactable components
+                                        are mostly not aligned with one another.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>The "Display Options" are not organized, making it difficult for a returning user to remember where certain
+                                        settings are located.
+                                    </li>
+                                    <li>
+                                        Returning users who recall changing what part of the sky is displayed by clicking and dragging might
+                                        drag the sky image itself, which does not work. This feature could be included to eliminate the need for users
+                                        to remember exactly where this control is located.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Then, I designed low fidelity and high fidelity prototypes showcasing how the page could be redesigned. 
+                    I made similar prototypes for the tablet and mobile versions of the page.
+                </p>
+                <div class="center"><img src="images/wireframe1.PNG" alt="A wireframe for the redesigned desktop page."></div>
+                <div class="center"><img src="images/hifi1.PNG" alt="A high-fidelity prototype for the redesigned desktop page."></div>
+                <p>
+                    Finally, I developed the redesigned page.
+                </p>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Result</h2></div>
+                <p>You can view the final redesigned page <a href="https://flusteredflamingo123.github.io/redesigned-page/" target="_blank">here.</a></p>
+                <div class="center"><img src="images/final.PNG" alt="A screenshot of the redesigned page."></div>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Skills Developed</h2></div>
+                <ul>
+                    <li>Scrutinizing interfaces with a keen eye for usability.</li>
+                    <li>Designing interfaces with new and returning users in mind.</li>
+                    <li>Developing webpages that are responsive to a variety of screen sizes.</li>
+                </ul>
+            </div>
+            <div id = "back" onclick="location.href='../index.html';" style="cursor: pointer;">
+                <div>Return to Portfolio</div>
+            </div>
+        </div>
+    </body>
+</html>

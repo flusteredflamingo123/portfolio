@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Portfolio: Mobile Development</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+    <body>
+        <h1>Mobile Development</h1>
+        <div class = "content">
+            <div class="orange">
+                <div class="center"><h2>Overview</h2></div>
+                <p> I continued to learn how to develop interactive interfaces by creating a mobile application using Flutter. This project
+                    also explored the process of fetching data from an API asynchronously.
+                </p>
+                <p>My application allows the user to enter a name and view the predicted nationality of the person with that name.</p>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Process</h2></div>
+                <p>I first needed to determine how to accept user input. I decided on a TextForm widget that would update a state
+                    variable whenever a new name was submitted.
+                </p>
+                <div class="center"><img src="images/textbox.PNG" alt="A screenshot of the redesigned page."></div>
+                <p>
+                    The user's input would then need to be placed in an API request to acquire the data corresponding with the inputted name.
+                    This is implemented with an asynchronous function that generates a Future object. When the request is resolved, the page 
+                    rerenders with the relevant information.
+                </p>
+                <div class="center"><img src="images/results.PNG" alt="A screenshot of the redesigned page."></div>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Result</h2></div>
+                <p>You can view the application <a href="https://flutlab.io/editor/f528b2a5-f1ce-49a5-a6c7-eb5d233034bc" target="_blank">here.</a></p>
+                <div class="center"><img src="images/final.PNG" alt="A screenshot of the redesigned page."></div>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Skills Developed</h2></div>
+                <ul>
+                    <li>Using Flutter to develop applications.</li>
+                    <li>Retrieving user input to determine how the screen is rendered.</li>
+                    <li>Fetching data from an API asynchronously.</li>
+                </ul>
+            </div>
+            <div id = "back" onclick="location.href='../index.html';" style="cursor: pointer;">
+                <div>Return to Portfolio</div>
+            </div>
+        </div>
+    </body>
+</html>

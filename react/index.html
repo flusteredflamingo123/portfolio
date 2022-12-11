@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Portfolio: React Development</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+    <body>
+        <h1>React Development</h1>
+        <div class = "content">
+            <div class="orange">
+                <div class="center"><h2>Overview</h2></div>
+                <p> Before this project, I had little experience making webpages truly interactive. This project taught me how to use React
+                    to pass data between different components of a page and update what is displayed on screen in response.
+                </p>
+                <p> To demonstrate these skills, I wanted to make a Scrabble tool that would showcase the various words that could be made
+                    with a set of letters and allow the user to sort and filter the words in a number of ways.  </p>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Process</h2></div>
+                <p>
+                    Each word would be displayed on a card. This card would show information about the word and feature a button 
+                    allowing the user to add the word to a list that tracks the total score of the selected words. Naturally, this card
+                    was implemented as its own React component where its props were the word that the card contains and the function that
+                    should be triggered when the "Add to List" button is pressed.
+                </p>
+                <div class="center"><img id = "card" src="images/card.PNG" alt="A screenshot of the card component."></div>
+                <p>
+                    The other main component was a menu that contained the options for filtering and sorting the cards and the list of selected words.
+                    This component is passed functions defining what to do when each option is selected.
+                </p>
+                <div class="center"><img id = "card" src="images/menu.PNG" alt="A screenshot of the card component."></div>
+                <p>
+                    Whenever a filter or sort is used, a state variable within the main app component is updated, altering how cards 
+                    are rendered on the page. These changes are easily reversible by selecting a new set of options or by pressing the "Reset" button.
+                </p>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Result</h2></div>
+                <p>You can view the final page <a href="https://flusteredflamingo123.github.io/development/" target="_blank">here.</a></p>
+                <div class="center"><img src="images/final.PNG" alt="A screenshot of the redesigned page."></div>
+            </div>
+            <div class="orange">
+                <div class="center"><h2>Skills Developed</h2></div>
+                <ul>
+                    <li>Dividing an interface into various components.</li>
+                    <li>Passing data effectively between components via props.</li>
+                    <li>Altering how a page is rendered in response to user input.</li>
+                </ul>
+            </div>
+            <div id = "back" onclick="location.href='../index.html';" style="cursor: pointer;">
+                <div>Return to Portfolio</div>
+            </div>
+        </div>
+    </body>
+</html>
